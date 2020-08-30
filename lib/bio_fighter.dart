@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:luchapediaa/all_fighters.dart';
 
 class BioFighter extends StatelessWidget {
   String urlKeminito ="https://imagenes.milenio.com/bphSgOtpXqNAf5Zn_9i1QK3v2fs=/958x596/smart/https://www.milenio.com/uploads/media/2020/03/24/kemonito-santiago-chaparro_0_9_958_596.jpeg";
@@ -30,7 +31,8 @@ class BioFighter extends StatelessWidget {
                 ),
               ),
               Expanded(child: Container()),
-              listaLuchadores(),
+              listaLuchadores(context),
+              Expanded(child: Container()),
             ],
           )
         ],
@@ -121,7 +123,7 @@ class BioFighter extends StatelessWidget {
     ) ;
   }//luchadorbio
 
-  Widget listaLuchadores(){
+  Widget listaLuchadores(BuildContext context){
     return Center(
       child: Container(
         height: 120,
@@ -327,15 +329,23 @@ class BioFighter extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10)
               ),
               child: Container(
-                margin: EdgeInsets.only(top: 85, left: 2),
-                child: Text(
-                  "Mas Luchadores",
-                  style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold
-                  ),
-                  ),
+                
+                child: IconButton(
+                  icon: Icon(
+                    Icons.add_circle_outline,
+                    color: Colors.lightBlueAccent[400],
+                    size: 80,
+                  ) , 
+                  onPressed: (){
+                    print("Mas luchadores ");
+                    Navigator.push(
+                      context, 
+                      MaterialPageRoute(
+                        builder: (BuildContext context) => AllFighters(),
+                      ),
+                    );
+                  },
+                )
               ),
             ),
             //Mas Luchadores
