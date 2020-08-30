@@ -30,6 +30,7 @@ class BioFighter extends StatelessWidget {
                 ),
               ),
               Expanded(child: Container()),
+              listaLuchadores(),
             ],
           )
         ],
@@ -118,5 +119,103 @@ class BioFighter extends StatelessWidget {
         ),
       ),
     ) ;
+  }//luchadorbio
+
+  Widget listaLuchadores(){
+    return Center(
+      child: Container(
+        height: 120,
+        width: 380,
+        decoration: BoxDecoration(
+          color: Colors.green,
+          borderRadius: BorderRadius.circular(10)
+        ),
+        child: ListView(
+          scrollDirection: Axis.horizontal,
+          children: [
+
+            Container(
+              margin: EdgeInsets.all(5),
+              width: 100,
+              decoration: BoxDecoration(
+                // color: Colors.amber,
+                image: DecorationImage(
+                  image: AssetImage("assets/Luchadores/elSanto.jpg"),
+                  fit: BoxFit.cover
+                ) ,
+                borderRadius: BorderRadius.circular(10)
+              ),
+              child: Container(
+                margin: EdgeInsets.only(top: 85, left: 2),
+                child: Text(
+                  "El santo",
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold
+                  ),
+                  ),
+              ),
+            ),
+
+            Container(
+              margin: EdgeInsets.all(5),
+              width: 100,
+              decoration: BoxDecoration(
+                color: Colors.deepPurpleAccent ,
+                borderRadius: BorderRadius.circular(10)
+              ),
+            ),
+
+            Container(
+              margin: EdgeInsets.all(5),
+              width: 100,
+              decoration: BoxDecoration(
+                color: Colors.blueGrey[300],
+                borderRadius: BorderRadius.circular(10)
+              ),
+            ),
+
+
+            Container(
+              margin: EdgeInsets.all(5),
+              width: 100,
+              decoration: BoxDecoration(
+                color: Colors.red ,
+                borderRadius: BorderRadius.circular(10)
+              ),
+            ),
+
+
+            Container(
+              margin: EdgeInsets.all(5),
+              decoration: BoxDecoration(
+                color: Colors.orange,
+                borderRadius: BorderRadius.circular(10)
+              ),
+            ),
+
+            Container(
+              margin: EdgeInsets.all(5),
+              width: 100,
+              decoration: BoxDecoration(
+                color: Colors.lightBlueAccent,
+                borderRadius: BorderRadius.circular(10)
+              ),
+            ),
+
+            Container(
+              margin: EdgeInsets.all(5),
+              width: 100,
+              decoration: BoxDecoration(
+                color: Colors.teal,
+                borderRadius: BorderRadius.circular(10)
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
+
 }
