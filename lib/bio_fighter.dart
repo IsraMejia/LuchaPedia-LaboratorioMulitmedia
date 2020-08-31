@@ -63,10 +63,21 @@ class BioFighter extends StatelessWidget {
           // ),
         child: Stack(
           children: [
-            Image(
-              width: 350,
-              image: NetworkImage(urlKeminito) ,
+            Positioned(
+              top:5,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(20.0),
+                child: FadeInImage.assetNetwork(
+                  placeholder: "assets/Gifs/loading.gif", 
+                  image: urlKeminito,
+                  width: 350,
+                ),
+              ),
             ),
+            // Image(
+            //   width: 350,
+            //   image: NetworkImage(urlKeminito) ,
+            // ),
             Positioned(
               top: 155,
               left:10,

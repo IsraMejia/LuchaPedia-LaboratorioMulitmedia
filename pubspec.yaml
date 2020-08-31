@@ -56,6 +56,8 @@ flutter:
    - assets/Luchadores/masLuchadores.png
    - assets/Luchadores/tiniebla.png
 
+   - assets/Gifs/loading.gif
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

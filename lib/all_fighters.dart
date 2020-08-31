@@ -54,7 +54,25 @@ class AllFighters extends StatelessWidget {
               margin: EdgeInsets.all(10),
               height: 125,
               width: 60,
-              color: Colors.red[300],
+              // color: Colors.red[300],
+              child: ClipRRect(
+                borderRadius:  BorderRadius.circular(10.0),
+                child: Container(
+                  width: 100,
+                  height: 125,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif", 
+                        image: urlHeroina,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
             Container(
               margin: EdgeInsets.all(10),
