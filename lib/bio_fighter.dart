@@ -18,7 +18,18 @@ class BioFighter extends StatelessWidget {
       ),
       body: Stack(
         children: [
-          Container( color: Colors.purpleAccent[700],),
+          Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment(0.0, 0.0),
+                end: Alignment(0.6, 0.99),
+                colors: [
+                  Colors.purpleAccent[700],
+                  Colors.deepPurpleAccent[400]
+                ]
+              )
+            ),
+          ),
           Column(
             children: [
               Expanded(child: Container()),
