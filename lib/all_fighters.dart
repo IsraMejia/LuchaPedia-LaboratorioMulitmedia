@@ -69,27 +69,94 @@ class AllFighters extends StatelessWidget {
                         height: 140,
                         fit: BoxFit.cover,
                       ),
+                      Positioned(
+                        top: 105,
+                        child: Text('Heroina',
+                          style: TextStyle(fontSize: 18, color:Colors.yellow[50],
+                                fontWeight: FontWeight.bold
+                          ) 
+                        )
+                      )
                     ],
                   ),
                 ),
               ),
             ),
+            //Container Heroina
+
             Container(
               margin: EdgeInsets.all(10),
               height: 125,
               width: 60,
-              color: Colors.blue,
+              // color: Colors.red[300],
+              child: ClipRRect(
+                borderRadius:  BorderRadius.circular(10.0),
+                child: Container(
+                  width: 100,
+                  height: 125,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif", 
+                        image: urlMistico,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 105,
+                        child: Text('Mistico',
+                          style: TextStyle(fontSize: 18, color:Colors.yellow[50],
+                                fontWeight: FontWeight.bold
+                          ) 
+                        )
+                      )
+                    ],
+                  ),
+                ),
+              ),
             ),
+            //Container Mistico
+
             Container(
               margin: EdgeInsets.all(10),
               height: 125,
               width: 60,
-              color: Colors.blue,
+              // color: Colors.red[300],
+              child: ClipRRect(
+                borderRadius:  BorderRadius.circular(10.0),
+                child: Container(
+                  width: 100,
+                  height: 125,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif", 
+                        image: urlLaHiedra,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 105,
+                        child: Text('La Hiedra',
+                          style: TextStyle(fontSize: 18, color:Colors.yellow[50],
+                                fontWeight: FontWeight.bold
+                          ) 
+                        )
+                      )
+                    ],
+                  ),
+                ),
+              ),
             ),
+            //Container Mistico
 
           ]
         ),
         //TableRow 1
+        
+        
         TableRow(
           children: [
 
@@ -97,25 +164,109 @@ class AllFighters extends StatelessWidget {
               margin: EdgeInsets.all(10),
               height: 125,
               width: 60,
-              color: Colors.blue,
+              // color: Colors.red[300],
+              child: ClipRRect(
+                borderRadius:  BorderRadius.circular(10.0),
+                child: Container(
+                  width: 100,
+                  height: 125,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif", 
+                        image: urlParca ,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 105,
+                        child: Text('La Parca',
+                          style: TextStyle(fontSize: 18, color:Colors.yellow[100],
+                                fontWeight: FontWeight.bold
+                          ) 
+                        )
+                      )
+                    ],
+                  ),
+                ),
+              ),
             ),
+            //Container Heroina
+
             Container(
               margin: EdgeInsets.all(10),
               height: 125,
               width: 60,
-              color: Colors.blue,
+              // color: Colors.red[300],
+              child: ClipRRect(
+                borderRadius:  BorderRadius.circular(10.0),
+                child: Container(
+                  width: 100,
+                  height: 125,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif", 
+                        image: urlPrincesaAzul,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 80,
+                        child: Text('Princesa \nAzul',
+                          style: TextStyle(fontSize: 18, color:Colors.yellow[100],
+                                fontWeight: FontWeight.bold
+                          ) 
+                        )
+                      )
+                    ],
+                  ),
+                ),
+              ),
             ),
+            //Container Mistico
+
             Container(
               margin: EdgeInsets.all(10),
               height: 125,
               width: 60,
-              color: Colors.blue,
+              // color: Colors.red[300],
+              child: ClipRRect(
+                borderRadius:  BorderRadius.circular(10.0),
+                child: Container(
+                  width: 100,
+                  height: 125,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif", 
+                        image: urlMascaraSagrada,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 80,
+                        child: Text('Mascara \nSagrada',
+                          style: TextStyle(fontSize: 18, color:Colors.yellow[50],
+                                fontWeight: FontWeight.bold
+                          ) 
+                        )
+                      )
+                    ],
+                  ),
+                ),
+              ),
             ),
+            //Container Mistico
 
           ]
         ),
         //TableRow 2
 
+                
         TableRow(
           children: [
 
@@ -123,25 +274,109 @@ class AllFighters extends StatelessWidget {
               margin: EdgeInsets.all(10),
               height: 125,
               width: 60,
-              color: Colors.blue,
+              // color: Colors.red[300],
+              child: ClipRRect(
+                borderRadius:  BorderRadius.circular(10.0),
+                child: Container(
+                  width: 100,
+                  height: 125,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif", 
+                        image: urlKeira,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 105,
+                        child: Text('Keira',
+                          style: TextStyle(fontSize: 18, color:Colors.yellow[100],
+                                fontWeight: FontWeight.bold
+                          ) 
+                        )
+                      )
+                    ],
+                  ),
+                ),
+              ),
             ),
+            //Container Heroina
+
             Container(
               margin: EdgeInsets.all(10),
               height: 125,
               width: 60,
-              color: Colors.blue,
+              // color: Colors.red[300],
+              child: ClipRRect(
+                borderRadius:  BorderRadius.circular(10.0),
+                child: Container(
+                  width: 100,
+                  height: 125,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif", 
+                        image: urlDosCaras,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 105,
+                        child: Text('Dos Caras',
+                          style: TextStyle(fontSize: 18, color:Colors.yellow[100],
+                                fontWeight: FontWeight.bold
+                          ) 
+                        )
+                      )
+                    ],
+                  ),
+                ),
+              ),
             ),
+            //Container Mistico
+
             Container(
               margin: EdgeInsets.all(10),
               height: 125,
               width: 60,
-              color: Colors.blue,
+              // color: Colors.red[300],
+              child: ClipRRect(
+                borderRadius:  BorderRadius.circular(10.0),
+                child: Container(
+                  width: 100,
+                  height: 125,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif", 
+                        image: urlLadyFlammer,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 85,
+                        child: Text('Lady \nFlammer',
+                          style: TextStyle(fontSize: 18, color:Colors.yellow[100],
+                                fontWeight: FontWeight.bold
+                          ) 
+                        )
+                      )
+                    ],
+                  ),
+                ),
+              ),
             ),
+            //Container Mistico
 
           ]
         ),
         //TableRow 3
 
+                        
         TableRow(
           children: [
 
@@ -149,20 +384,103 @@ class AllFighters extends StatelessWidget {
               margin: EdgeInsets.all(10),
               height: 125,
               width: 60,
-              color: Colors.blue,
+              // color: Colors.red[300],
+              child: ClipRRect(
+                borderRadius:  BorderRadius.circular(10.0),
+                child: Container(
+                  width: 100,
+                  height: 125,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif", 
+                        image: urlOctagon,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 105,
+                        child: Text('Octagon',
+                          style: TextStyle(fontSize: 18, color:Colors.yellow[100],
+                                fontWeight: FontWeight.bold
+                          ) 
+                        )
+                      )
+                    ],
+                  ),
+                ),
+              ),
             ),
+            //Container Heroina
+
             Container(
               margin: EdgeInsets.all(10),
               height: 125,
               width: 60,
-              color: Colors.blue,
+              // color: Colors.red[300],
+              child: ClipRRect(
+                borderRadius:  BorderRadius.circular(10.0),
+                child: Container(
+                  width: 100,
+                  height: 125,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif", 
+                        image: urlBaronessa,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 105,
+                        child: Text('Baronesa',
+                          style: TextStyle(fontSize: 18, color:Colors.yellow[100],
+                                fontWeight: FontWeight.bold
+                          ) 
+                        )
+                      )
+                    ],
+                  ),
+                ),
+              ),
             ),
+            //Container Mistico
+
             Container(
               margin: EdgeInsets.all(10),
               height: 125,
               width: 60,
-              color: Colors.blue,
+              // color: Colors.red[300],
+              child: ClipRRect(
+                borderRadius:  BorderRadius.circular(10.0),
+                child: Container(
+                  width: 100,
+                  height: 125,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif", 
+                        image: urlAtlantis,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 105,
+                        child: Text('Atlantis',
+                          style: TextStyle(fontSize: 18, color:Colors.yellow[100],
+                                fontWeight: FontWeight.bold
+                          ) 
+                        )
+                      )
+                    ],
+                  ),
+                ),
+              ),
             ),
+            //Container Mistico
 
           ]
         ),
