@@ -7,6 +7,7 @@ class BioFighter extends StatelessWidget {
       "https://imagenes.milenio.com/bphSgOtpXqNAf5Zn_9i1QK3v2fs=/958x596/smart/https://www.milenio.com/uploads/media/2020/03/24/kemonito-santiago-chaparro_0_9_958_596.jpeg";
   String bioK =
       "KeMinito nacio el 3 de julio de 1967, es un icono de la lucha libre profesional mexicano, actualmente trabaja para la empresa Consejo Mundial de Lucha Libre (CMLL).";
+  String bioKweb = "KeMinito nacio el 3 de julio de 1967, es un icono de la lucha libre profesional mexicano, actualmente trabaja para la empresa Consejo Mundial de Lucha Libre (CMLL).\n\nAntes de ser KeMonito, fue conocido como Alushe (1984-2003), cabe destacar haber participado bajo este mismo nombre en el programa de televisión Odisea de Burbujas, SuperVacaciones y las Aventuras de Capulina.\n\nDe igual forma lucho bajo el nombre de Duende Maya. Como dato curioso tomo el titulo de KeMonito en el 2003, el cual lo sigue portando hasta la actulidad.";
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
@@ -196,11 +197,11 @@ class BioFighter extends StatelessWidget {
         ),
 
         Positioned(
-          top: (constraints.maxWidth < 1200) ? 245 : constraints.maxWidth * 0.2,
+          top: (constraints.maxWidth < 1200) ? 200 : constraints.maxWidth * 0.15,
           left: constraints.maxWidth * 0.07,
           child: Container(
             width:(constraints.maxWidth < 1200) ? 380 : constraints.maxWidth * 0.37,
-            height: constraints.maxHeight * 0.5,
+            height: constraints.maxHeight * 0.55,
             decoration: BoxDecoration(
                 color: Colors.indigo[700],
                 borderRadius: BorderRadius.circular(10)),
@@ -215,28 +216,17 @@ class BioFighter extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(left: 5),
                   child: Text(
-                    bioK,
+                    bioKweb,
                     style: TextStyle(
-                      fontSize: (constraints.maxWidth < 1230) ? 15: 17 ,
+                      fontSize: (constraints.maxWidth < 1230) ? 14: 16 ,
                       color: Colors.yellow[50],
                     ),
                   ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    FlatButton(
-                      color: Colors.teal[400],
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30)),
-                      onPressed: () {},
-                      child: Text(
-                        'Ver mas',
-                        style: TextStyle(fontSize: 18),
-                      ),
-                    ),
-                    SizedBox(width: 30),
-                    FlatButton(
+                Center(
+                    child: Container(
+                    width: 120,
+                    child: FlatButton(
                         color: Colors.pink[400],
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30)),
@@ -246,8 +236,8 @@ class BioFighter extends StatelessWidget {
                             Text('Me gusta'),
                             Icon(Icons.favorite_border)
                           ],
-                        ))
-                  ],
+                    )),
+                  ),
                 )
               ],
             ),
