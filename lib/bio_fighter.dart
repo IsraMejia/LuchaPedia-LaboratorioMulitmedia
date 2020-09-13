@@ -190,20 +190,17 @@ class BioFighter extends StatelessWidget {
             child: FadeInImage.assetNetwork(
               placeholder: "assets/Gifs/loading.gif",
               image: urlKeminito,
-              width: 450,
+              width: (constraints.maxWidth < 1200) ? 430 : constraints.maxWidth * 0.4,
             ),
           ),
         ),
-        // Image(
-        //   width: 350,
-        //   image: NetworkImage(urlKeminito) ,
-        // ),
+
         Positioned(
-          top: 155,
-          left: 10,
+          top: (constraints.maxWidth < 1200) ? 245 : constraints.maxWidth * 0.2,
+          left: constraints.maxWidth * 0.07,
           child: Container(
-            width: 330,
-            height: 210,
+            width:(constraints.maxWidth < 1200) ? 380 : constraints.maxWidth * 0.37,
+            height: constraints.maxHeight * 0.5,
             decoration: BoxDecoration(
                 color: Colors.indigo[700],
                 borderRadius: BorderRadius.circular(10)),
@@ -213,14 +210,14 @@ class BioFighter extends StatelessWidget {
               children: [
                 Text(
                   'Kemonito',
-                  style: TextStyle(fontSize: 28, color: Colors.yellow[200]),
+                  style: TextStyle(fontSize: 38, color: Colors.yellow[200]),
                 ),
                 Container(
                   margin: EdgeInsets.only(left: 5),
                   child: Text(
                     bioK,
                     style: TextStyle(
-                      fontSize: 16,
+                      fontSize: (constraints.maxWidth < 1230) ? 15: 17 ,
                       color: Colors.yellow[50],
                     ),
                   ),
