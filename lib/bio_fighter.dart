@@ -79,7 +79,7 @@ class BioFighter extends StatelessWidget {
               Row(
                 children: [
                   Expanded(child: luchadorBioWeb(constraints)),
-                  Expanded(child: Container())
+                  Expanded(child: AllFighters().figthersTable(context) )
                 ],
               )
             ],
